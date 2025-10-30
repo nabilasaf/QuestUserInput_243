@@ -3,6 +3,7 @@ package com.example.inputpengguna
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
@@ -75,6 +76,15 @@ fun FormDataDiri(modifier: Modifier
             thickness = dimensionResource(id = R.dimen.divider_tipis),
             color = Color.LightGray
         )
-        Button() { }
+        Button(modifier = Modifier.fillMaxWidth(fraction = 1f),
+           enabled = textAlamat.isNotEmpty(),
+            onClick = {
+                nama=textNama
+                jenis=textJK
+                alamat=textAlamat
+            }
+        ){
+
+        }
     }
 }
