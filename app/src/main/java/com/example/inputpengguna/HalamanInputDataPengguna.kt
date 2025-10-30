@@ -39,7 +39,7 @@ fun FormDataDiri(modifier: Modifier
             singleLine = true,
             shape = MaterialTheme.shapes.large,
             modifier = Modifier.width(width = 250.dp),
-            label = { Text(text = "Nama Lengkap") },
+            label = {Text(text = "Nama Lengkap") },
             onValueChange = {
                 textNama = it
             }
@@ -49,9 +49,13 @@ fun FormDataDiri(modifier: Modifier
                 Row (modifier = Modifier.selectable(
                     selected = textJK == item,
                     onClick = {textJK = item}
-                )){  }
+                )){
+                    Text(text = item)
+                }
             }
         }
+        OutlinedTextField(
 
+        )
     }
 }
