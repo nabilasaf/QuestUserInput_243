@@ -3,6 +3,7 @@ package com.example.inputpengguna
 import android.R
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.text.input.TextFieldLineLimits
@@ -42,6 +43,9 @@ fun FormDataDiri(modifier: Modifier
                 textNama = it
             }
         )
+        Row {
+
+        }
 
     }
 }
