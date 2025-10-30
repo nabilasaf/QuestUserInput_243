@@ -1,6 +1,7 @@
 package com.example.inputpengguna
 
 import android.R
+import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -18,4 +19,6 @@ fun FormDataDiri(modifier: Modifier
     var jenis by remember { mutableStateOf(value = " ") }
 
     val gender:List<String> = listOf("Laki-laki","Perempuan")
+
+    Column (){  }
 }
