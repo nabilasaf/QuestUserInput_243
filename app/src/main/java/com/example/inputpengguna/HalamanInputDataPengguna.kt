@@ -109,6 +109,22 @@ fun FormDataDiri(modifier: Modifier
                 modifier = Modifier.padding(top = 10.dp)
                     .padding(horizontal = 20.dp))
             Spacer(modifier= Modifier.height(height = 10.dp))
+            Column {
+                gender.forEach { item ->
+                    Row(modifier = Modifier.selectable(
+                        selected = textJK == item,
+                        onClick = { textJK = item }
+                    ), verticalAlignment = Alignment.CenterVertically) {
+                        RadioButton(
+                            selected = textJK == item,
+                            onClick = {
+                                textJK = item
+                            }
+                        )
+                        Text(text = item)
+                    }
+                }
+            }
         }
         HorizontalDivider(
             modifier = Modifier.padding(
