@@ -44,19 +44,11 @@ fun FormDataDiri(modifier: Modifier
     val gender:List<String> = listOf("Laki-laki","Perempuan")
     var status: List<String> = listOf("Janda","Lajang","Duda","Menikah")
 
-    Column (modifier = Modifier.padding(top = 50.dp),
-        verticalArrangement = Arrangement.Top,
-        horizontalAlignment = Alignment.CenterHorizontally){
-        OutlinedTextField(
-            value = textNama,
-            singleLine = true,
-            shape = MaterialTheme.shapes.large,
-            modifier = Modifier.width(width = 250.dp),
-            label = {Text(text = "Nama Lengkap") },
-            onValueChange = {
-                textNama = it
-            }
-        )
+    Column (modifier = Modifier.padding(top = 50.dp)
+        .fillMaxWidth(),
+        verticalArrangement = Arrangement.Center
+
+    ){
         Row {
             gender.forEach { item ->
                 Row(modifier = Modifier.selectable(
