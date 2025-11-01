@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">InputPengguna</string>
     <string name="Submit">Submit</string>
+    <string name="pendaftaran">Formulir Pendaftaran</string>
+    <string name="Nama">Nama Lengkap</string>
+    <string name="Jenis">Jenis Kelamin</string>
+    <string name="Status">Status Perkawinan</string>
+    <string name="Alamat">Alamat</string>
 </resources>
