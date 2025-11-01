@@ -125,6 +125,7 @@ fun FormDataDiri(modifier: Modifier
                     }
                 }
             }
+            Spacer(modifier= Modifier.height(height = 10.dp))
         }
         HorizontalDivider(
             modifier = Modifier.padding(
