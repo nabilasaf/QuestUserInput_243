@@ -126,6 +126,13 @@ fun FormDataDiri(modifier: Modifier
                 }
             }
             Spacer(modifier= Modifier.height(height = 10.dp))
+            Text(text = stringResource(id = R.string.Status),
+                fontSize = 20.sp,
+                fontFamily = FontFamily.Serif,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black,
+                modifier = Modifier.padding(top = 10.dp)
+                    .padding(horizontal = 20.dp))
         }
         HorizontalDivider(
             modifier = Modifier.padding(
