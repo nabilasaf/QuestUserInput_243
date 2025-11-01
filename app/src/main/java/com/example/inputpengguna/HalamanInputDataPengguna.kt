@@ -170,6 +170,18 @@ fun FormDataDiri(modifier: Modifier
                     textAlamat = it
                 })
             Spacer(modifier= Modifier.height(height = 10.dp))
+            Button(modifier = Modifier.padding(horizontal = 50.dp)
+                .width(width = 500.dp),
+                enabled = textAlamat.isNotEmpty(),
+                onClick = {
+                    nama=textNama
+                    jenis=textJK
+                    alamat=textAlamat
+                    status= listOf(textSP)
+                }
+            ){
+                Text(text = stringResource(id = R.string.Submit))
+            }
         }
         HorizontalDivider(
             modifier = Modifier.padding(
