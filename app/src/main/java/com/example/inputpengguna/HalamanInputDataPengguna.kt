@@ -1,6 +1,8 @@
 package com.example.inputpengguna
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -26,7 +28,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun FormDataDiri(modifier: Modifier
@@ -49,21 +54,19 @@ fun FormDataDiri(modifier: Modifier
         verticalArrangement = Arrangement.Center
 
     ){
-        Row {
-            gender.forEach { item ->
-                Row(modifier = Modifier.selectable(
-                    selected = textJK == item,
-                    onClick = { textJK = item }
-                ), verticalAlignment = Alignment.CenterVertically) {
-                    RadioButton(
-                        selected = textJK == item,
-                        onClick = {
-                            textJK = item
-                        }
-                    )
-                    Text(text = item)
-                }
-            }
+        Box(modifier = Modifier
+            .fillMaxWidth()
+            .background(color = Color.DarkGray)
+            .padding(top = 70.dp)
+        ) {
+            Text(text = stringResource(id= R.string.pendaftaran),
+                modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp),
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Serif,
+                color = Color.White,
+            )
+
         }
         OutlinedTextField(
             value = textAlamat,
