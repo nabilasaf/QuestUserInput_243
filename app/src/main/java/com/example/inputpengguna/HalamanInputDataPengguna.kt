@@ -90,6 +90,16 @@ fun FormDataDiri(modifier: Modifier
                 modifier = Modifier.padding(top = 10.dp)
                     .padding(horizontal = 20.dp))
             Spacer(modifier= Modifier.height(height = 10.dp))
+            OutlinedTextField(
+                value = textNama,
+                singleLine = true,
+                modifier = Modifier.width(width = 400.dp)
+                    .padding(horizontal = 10.dp),
+                leadingIcon = {Text(text = "Isi Nama Lengkap",
+                    modifier = Modifier.padding(start = 5.dp))},
+                onValueChange = {
+                    textNama = it
+                })
         }
         HorizontalDivider(
             modifier = Modifier.padding(
