@@ -82,6 +82,13 @@ fun FormDataDiri(modifier: Modifier
             colors = CardDefaults.cardColors(
                 containerColor = Color.White)){
             Spacer(modifier= Modifier.height(height = 20.dp))
+            Text(text = stringResource(id = R.string.Nama),
+                fontSize = 20.sp,
+                fontFamily = FontFamily.Serif,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black,
+                modifier = Modifier.padding(top = 10.dp)
+                    .padding(horizontal = 20.dp))
         }
         HorizontalDivider(
             modifier = Modifier.padding(
