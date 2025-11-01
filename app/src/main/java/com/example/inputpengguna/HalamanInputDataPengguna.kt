@@ -169,6 +169,7 @@ fun FormDataDiri(modifier: Modifier
                 onValueChange = {
                     textAlamat = it
                 })
+            Spacer(modifier= Modifier.height(height = 10.dp))
         }
         HorizontalDivider(
             modifier = Modifier.padding(
