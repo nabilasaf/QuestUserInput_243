@@ -6,12 +6,14 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.Button
+import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.HorizontalDivider
@@ -71,16 +73,14 @@ fun FormDataDiri(modifier: Modifier
         }
         Spacer(modifier= Modifier.height(height = 0.dp))
 
-        OutlinedTextField(
-            value = textAlamat,
-            singleLine = true,
-            shape = MaterialTheme.shapes.large,
-            modifier = Modifier.width(width = 250.dp),
-            label = {Text(text = "Alamat Lengkap")},
-            onValueChange = {
-                textAlamat =it
-            }
-        )
+        Card (modifier = Modifier
+            .background(color = Color.LightGray)
+            .fillMaxWidth(fraction = 1f)
+            .fillMaxSize(fraction = 1f)
+            .padding(all = 20.dp),
+
+            colors = CardDefaults.cardColors(
+                containerColor = Color.White)){}
         HorizontalDivider(
             modifier = Modifier.padding(
                 bottom = dimensionResource(id = R.dimen.padding_medium),
