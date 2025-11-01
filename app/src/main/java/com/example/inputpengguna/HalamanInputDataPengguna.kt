@@ -80,7 +80,9 @@ fun FormDataDiri(modifier: Modifier
             .padding(all = 20.dp),
 
             colors = CardDefaults.cardColors(
-                containerColor = Color.White)){}
+                containerColor = Color.White)){
+            Spacer(modifier= Modifier.height(height = 20.dp))
+        }
         HorizontalDivider(
             modifier = Modifier.padding(
                 bottom = dimensionResource(id = R.dimen.padding_medium),
